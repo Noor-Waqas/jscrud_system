@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id": 4,
+      "name": "Noor Ahmad",
+      "email": "Noor@gmail.com",
+      "phone": "03088883398",
+      "active": true,
+      "country": "03088883398",
+      "homes": "township lahore "
+    },
+    {
+      "name": "waqas",
+      "email": "wali@gmail.com",
+      "phone": "03206437540",
+      "country": "pakistan",
+      "active": true,
+      "homes": "green town lahore",
+      "id": 5
+    }
+  ]
+}
