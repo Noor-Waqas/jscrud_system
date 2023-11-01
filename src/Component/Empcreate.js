@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { Link, json, useNavigate } from "react-router-dom";
+import Store1 from "../models/StdStore";
+import { observer } from "mobx-react-lite";
 
 const Empcreate = () => {
   const [id, idchange] = useState("");
@@ -18,8 +20,10 @@ const Empcreate = () => {
 
   const handlesubmit = (e) => {
     e.preventDefault();
+    // {
+    //   Store1.getApiStd();
+    // }
     const studentData = { name, email, phone, country, active, homes };
-
     fetch("http://localhost:3000/students", {
       method: "POST",
       headers: { "content-type": "application/json" },
@@ -162,4 +166,4 @@ const Empcreate = () => {
     </>
   );
 };
-export default Empcreate;
+export default observer(Empcreate);
